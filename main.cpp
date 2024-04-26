@@ -6,7 +6,7 @@ using namespace std;
 string recebe_string(string codificada){
     string decodificada;
     for(int i = 0; i < codificada.size(); i++){
-        if(codificada[i] >= 'a' && codificada[i] <= 'z'){
+        if((codificada[i] >= 'a' && codificada[i] <= 'z') || (codificada[i] >= 'A' && codificada[i] <= 'Z'){
             decodificada += codificada[i];
         }
     }
